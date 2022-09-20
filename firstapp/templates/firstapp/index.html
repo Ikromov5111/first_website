@@ -1,0 +1,116 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'style/style.css'%}"> 
+</head>
+<body>
+    <header>
+
+        <nav>
+
+            <div class="parent">
+                <a href="">
+                    <img src="{% static 'img/nike_mblema.png '%}" alt="">
+                </a>
+
+                <ul>
+                    <li><a href="">Кроссовки</a></li>
+                    <li><a href="">Кеды</a></li>
+                    <li><a href="">Футболки</a></li>
+                    <li><a href="">Шорты</a></li>
+                    <li><a href="">Майки</a></li>
+                    <li><a href="">Олимпийки</a></li>
+                    <li><a href="">Толстовки</a></li>
+                    
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div class="header-info">
+
+            <h1>NIKE</h1>
+            <p>Крутые кроссовки от <strong>NIKE</strong>  для вас   </p>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="box">
+
+        <div class="main-left">
+            <img src="{% static 'img/Nike-React-Infinity-Run-Heel--1920 1.jpg' %}" alt="">
+            <h2>Shoe Review: Nike React Infinity Run</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa</p>
+
+        </div>
+
+        <div class="main-right">
+            <dev class="child">
+                <img src="{% static 'img/air-max-270-mens-shoe-qVk0Vw 1.png' %}" alt="">
+                <h2>Nike Air Max 270</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+            </dev>
+            <dev class="child">
+                <img src="{% static 'img/uwjw39b1xdsbtmfnxjqm 1.png' %}" alt="">
+                <h2> Nike Tanjun</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+            </dev>
+            
+            <dev class="child">
+                <img src="{% static 'img/c4be5739-94a6-4501-9bff-0009e0712e9b 1.png' %}" alt="">
+                <h2>Зеленый Air Force</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+            </dev>
+            <dev class="child">
+                <img src="{% static 'img/106015873-1562928489280417744-001a-4 1.png'%}" alt="">
+                <h2>Nike moon shoes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+            </dev>
+
+        </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <form action="" method="POST">
+            {%  csrf_token %}
+            
+            {% render_field form.name type="text" placeholder="Введите свое имя" %}
+            <!-- <textarea name="" id="" ></textarea> -->
+            {% render_field form.sms type='textarea' placeholder="Сообщение" %}
+            <input class ="btn" type="submit" value="Отправить">
+        </form>
+
+        <div class="main">
+            <ul>
+                <li><a href="#!">Кроссовки</a></li>
+                <li><a href="#!">Кеды</a></li>
+                <li><a href="#!">Футболки</a></li>
+                <li><a href="#!">Шорты</a></li>
+            </ul>
+            <ul>
+                <li><a href="#!">Майки</a></li>
+                <li><a href="#!">Олимпийки</a></li>
+                <li><a href="#!">Толстовки</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

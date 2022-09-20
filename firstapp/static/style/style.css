@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav{
+    background:#322E41;
+}
+.parent{
+    
+    /* border: 5px solid red; */
+    width: 1110px;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul a{
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 23px 14px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    line-height: 19px;
+    transition: background 500ms, color 500ms;
+}
+
+header ul a:hover {
+    background-color: blue;
+    color: orange;
+    
+}
+
+.header-info{
+    background: url(../img/Nike-Adapt-BB\ 1.jpg) no-repeat center /cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.header-info h1{
+    color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.header-info p{
+color: #FFFFFF;
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+line-height: 21px;
+
+}
+
+main{
+    background: #e5e5e5;
+    padding-bottom: 31px;
+
+}
+
+.box{
+    width: 1110px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main-left,
+.main-right {
+    width: 540px;
+    margin-top:-37px;
+}
+
+.main-left{
+    width: 540px;
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.main-left h2{
+    color:#2C2A2A;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 20px 0 10px;
+    
+}
+
+.main-left p {
+    line-height: 19px;
+    color: #9B9B9B;
+
+}
+.main-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+}
+.child{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    width: 255px;
+    padding:15px;
+    /* margin : 15px; */
+    font-family: 'Roboto' sans-serif;
+    align-items: center;
+    
+}
+.child:nth-of-type(1),
+.child:nth-of-type(2){
+    margin-bottom: 29.5px;
+}
+
+.child img{
+    width: 80px;
+    height: 80px;
+}
+
+.child h2{
+    color:#2C2A2A;
+    margin : 12px 0;
+}
+.child p{
+    color:#9B9B9B;
+    line-height: 16px;
+}
+
+footer{
+    background: #322E41;
+    padding: 36px 0px 58px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+    
+}
+
+.name{
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-style: 18px;
+    line-height: 18px;
+    color:#9B9B9B;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+textarea{
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 8px;
+    margin-bottom: 11px;
+    font-style: 18px;
+    line-height: 18px;
+    color:#9B9B9B;
+    height: 86px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+}
+
+.btn{
+    border-radius: 6px;
+    background: #544294;
+    outline: none;
+    line-height: 18px;
+    color: #FFFFFF;
+    cursor:pointer;
+    padding:4px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    width: 238px;
+    /* align-items: center; */
+}
+
+.main ul :hover{
+    color:#D47300
+}
+
+.main ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.main ul a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    line-height: 19px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: color 500ms;
+
+}
+
+.tables{
+border:1px solid blue;
+
+}
+
+.tables th,td{
+    padding:8px;
+    border:1px solid blue;
+}
+table{
+    border-collapse: collapse;
+    width: 1100px;
+}
+

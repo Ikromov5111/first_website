@@ -1,0 +1,99 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'style/style.css'%}"> 
+</head>
+<body>
+    <header>
+
+        <nav>
+
+            <div class="parent">
+                <a href="">
+                    <img src="{% static 'img/nike_mblema.png '%}" alt="">
+                </a>
+
+                <ul>
+                    <li><a href="">Кроссовки</a></li>
+                    <li><a href="">Кеды</a></li>
+                    <li><a href="">Футболки</a></li>
+                    <li><a href="">Шорты</a></li>
+                    <li><a href="">Майки</a></li>
+                    <li><a href="">Олимпийки</a></li>
+                    <li><a href="">Толстовки</a></li>
+                    
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div class="header-info">
+
+            <h1>NIKE</h1>
+            <p>Крутые кроссовки от <strong>NIKE</strong>  для вас   </p>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="box">
+            <div class="card">
+                <p class="card-description">
+                    Rostan ham ushbu "{{ check }}" odam tomonidan yozilga smsni o'chirib  tashlamoqchimisiz
+                </p>
+                <div class="card-body">
+                    <form class="pt-3"   method= "POST">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-primary mb-2">Delete</button>
+                        <a href = "{% url 'Check_t' %}"class="btn btn-light">Cancel</a>
+                    </form>
+                </div>
+            </div>
+     
+
+        </div>
+    </main>
+
+    <footer>
+        <!-- <form action="">
+            <input class="name" type="text" placeholder="Введите свое имя"> 
+            <textarea name="" id="" placeholder="Сообщение"></textarea>
+            <input class ="btn" type="submit" value="Отправить">
+        </form> -->
+
+        <div class="main">
+            <ul>
+                <li><a href="#!">Кроссовки</a></li>
+                <li><a href="#!">Кеды</a></li>
+                <li><a href="#!">Футболки</a></li>
+                <li><a href="#!">Шорты</a></li>
+            </ul>
+            <ul>
+                <li><a href="#!">Майки</a></li>
+                <li><a href="#!">Олимпийки</a></li>
+                <li><a href="#!">Толстовки</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+
+
+
+
+
